@@ -1,0 +1,336 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #8C8E99;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 4.17;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+}
+
+.hero {
+  height: 100vh;
+}
+
+.hero__logo {
+  display: inline-block;
+  position: absolute;
+  z-index: 100;
+  right: 3rem;
+  top: 2.2rem;
+}
+
+.hero__copyright-text {
+  display: inline-block;
+  position: absolute;
+  z-index: 100;
+  top: auto;
+  bottom: 1.8rem;
+  left: 3rem;
+}
+
+.hero__heading-box {
+  display: inline-block;
+  z-index: 200;
+  position: absolute;
+  left: auto;
+  right: 30rem;
+  bottom: auto;
+  top: 32rem;
+}
+@media only screen and (max-width: 800px) {
+  .hero__heading-box {
+    right: 23%;
+  }
+}
+
+  @media only screen and (max-width: 414px) {
+    .hero__heading-box {
+      right: auto;
+    }
+  }
+
+
+.hero__heading-box-logo {
+  margin-bottom: 2.5rem;
+}
+
+.hero__heading-box-small {
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  line-height: 1.6px;
+  padding-bottom: .7rem;
+}
+
+.hero__heading-box-big {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+}
+
+.hero__formlogin {
+  display: inline-block;
+  display: none;
+  max-width: 45rem;
+  color: #262626;
+  position: absolute;
+  left: auto;
+  right: 30rem;
+  bottom: auto;
+  top: 16rem;
+  z-index: 300;
+  padding: 2rem 4rem;
+  background-color: #ffffff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+  .hero__formlogin {
+    right: 23%;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .hero__formlogin  {
+    right: 0;
+    max-width: 100%;
+  }
+}
+
+
+
+.hero__btn {
+  height: 43.2px;
+  width: 12.6rem;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #db353a;
+  color: #fff;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.hero__btn:hover {
+  opacity: .8;
+  -webkit-transition: all linear .4s;
+  -o-transition: all linear .4s;
+  transition: all linear .4s;
+}
+
+.hero__card {
+  padding: 2rem 4rem;
+}
+
+.hero__reveal {
+  width: 14.3px;
+  height: 14.3px;
+}
+
+.hero__input {
+  min-width: 34.6rem;
+}
+
+.hero__input ::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+.hero__input :-ms-input-placeholder {
+  font-size: 14px;
+}
+
+.hero__input ::-ms-input-placeholder {
+  font-size: 14px;
+}
+
+.hero__input ::placeholder {
+  font-size: 14px;
+}
+
+.hero__input input {
+  height: 48px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+.hero__input input:focus {
+  border-color: #0a9cb7;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.hero__label {
+  font-family: OpenSans;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  margin-bottom: 0;
+}
+
+.hero__btn-circle {
+  width: 135px;
+  height: 48px;
+  margin-top: 1.9rem;
+  color: white;
+  font-size: 15px;
+  background-color: #db353a;
+}
+
+.hero__carousel {
+  height: 100vh;
+}
+
+.hero__carousel--1 {
+  background-image: url("../img/sterlingbank_slideOne.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__carousel--2 {
+  background-image: url("../img/sterlingbank_slideTwo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__carousel--3 {
+  background-image: url("../img/sterlingbank_slideThree.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__carousel--indicators {
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  position: absolute;
+  right: -5rem;
+  bottom: 13.5rem;
+  left: auto;
+  z-index: 15;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  margin-left: 1.8rem;
+  margin-right: 0;
+  transform: rotate(90deg);
+  margin-left: 0;
+  list-style: none;
+}
+
+.hero__carousel--indicators li {
+  width: 4rem;
+  height: 2px;
+  position: relative;
+  opacity: 0.5;
+}
+
+.hero__carousel--indicators li.active {
+  background-color: #db353a;
+  opacity: 1;
+}
+
+.hero__carousel--indicators li::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  margin-top: .5rem;
+  margin-left: -2rem;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
