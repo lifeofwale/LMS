@@ -69,9 +69,10 @@ body {
   }
 }
 
+  
   @media only screen and (max-width: 414px) {
     .hero__heading-box {
-      right: auto;
+      left: 3%;
     }
   }
 
@@ -156,6 +157,13 @@ body {
 
 .hero__input {
   min-width: 34.6rem;
+
+ 
+}
+@media only screen and (max-width:414px){
+  .hero__input{
+    width: 30rem;
+  }
 }
 
 .hero__input ::-webkit-input-placeholder {
